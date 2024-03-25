@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+    background: whitesmoke;
+}
+  
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.btn-collapse {
+    cursor: pointer;
+    color: #fff;
+    font: 1em sans-serif;
+    background-color: #0095ff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px;
+    outline: none;
+    border-radius: 5px;
+    border-color: #0095ff;
+}
+
+.btn-collapse:hover {
+    background-color: #217bdb;
+    border-color: #a4c5e9;
+}
+
+.collapse {
+    display: none;
+}
+  
+.collapse_show {
+    overflow: hidden;
+    animation-name: rolldown;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+  
+.collapse_hide {
+    overflow: hidden;
+    animation-name: rollup;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes rolldown {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 1000px;
+    }
+}
+  
+@keyframes rollup {
+    from {
+        max-height: 1000px;
+    }
+    to {
+        max-height: 0px;
+    }
+}
+  
+.collapse-text {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
+  }
+
+.copy {
+    width: 50px;
+    margin-left: auto;
+    opacity: 50%;
+}
